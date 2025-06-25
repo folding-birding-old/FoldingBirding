@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4. MR Space.unity
     guid: 5095fdf560fe4a143b8ae80da32946b9
+  - enabled: 1
+    path: Assets/Scenes/0. Save Spatial.unity
+    guid: 0e3f988c1d81b8a45b1b746e1eca68e6
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0adee1dd735627c4f95d162eff70509d,
       type: 2}

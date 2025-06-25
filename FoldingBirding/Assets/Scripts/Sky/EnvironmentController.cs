@@ -43,19 +43,29 @@ public class EnvironmentManager : MonoBehaviour
     {
         timer += Time.deltaTime;
 
+        // 1. 반복 가능한 시간으로 변환
+        float cycleTime = timer;
+
+        // 2. 시간 상태 결정 (Day → Sunset → Night)
         TimeOfDay newTime;
-        if (timer < totalPlayTime * 0.4f)
+        if (cycleTime < totalPlayTime * 0.4f)
             newTime = TimeOfDay.Day;
-        else if (timer < totalPlayTime * 0.8f)
+        else if (cycleTime < totalPlayTime * 0.8f)
             newTime = TimeOfDay.Sunset;
         else
             newTime = TimeOfDay.Night;
 
+        // 3. 상태 변화 시 환경 설정
         if (newTime != currentTime)
         {
             SetEnvironment(newTime);
             Debug.Log("환경 전환: " + newTime);
         }
+
+        // 4. 사이클이 끝나면 타이머 리셋 (한 바퀴 끝나면 0초로)
+        if (timer >= totalPlayTime)
+            timer = 0f;
+
 
         float speed = 0.5f * Time.deltaTime;
         currentTopColor = Color.Lerp(currentTopColor, targetTopColor, speed);
