@@ -22,5 +22,3 @@
 ![폴딩버딩 최종PPT (06_22)-이미지-21](https://github.com/user-attachments/assets/26a10d00-ffa7-48b2-aa8c-083639a4e703)
 ![폴딩버딩 최종PPT (06_22)-이미지-22](https://github.com/user-attachments/assets/4577dcc4-bd69-41b1-b86c-9b0854521f9a)
 ![폴딩버딩 최종PPT (06_22)-이미지-23](https://github.com/user-attachments/assets/db3477dc-ebdb-47e2-b005-ab995fb5b960)
-![폴딩버딩 최종PPT (06_22)-이미지-24](https://github.com/user-attachments/assets/c133535b-c194-490f-9932-9f3c780cfc2b)
-![폴딩버딩 최종PPT (06_22)-이미지-25](https://github.com/user-attachments/assets/df2d7238-d650-4dee-af59-944a57be056e)
