@@ -547,7 +547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   serverUrl: http://localhost:8000
-  scrollParent: {fileID: 277042868}
+  contents: {fileID: 0}
+  contentPrefab: {fileID: 0}
   nicknameButtonPrefab: {fileID: 4364741282680904333, guid: 7d3807f1f48f0974090a8518278bbcfa,
     type: 3}
   targetMaterial: {fileID: 2100000, guid: bdecba69947879749b939ab800155488, type: 2}

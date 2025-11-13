@@ -324,4 +324,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   birdState: 0
-  debugTxt: {fileID: 8965022767091573789}
+  interactionState: 0
+  musicVFX: {fileID: 0}
+  heartVFX: {fileID: 0}

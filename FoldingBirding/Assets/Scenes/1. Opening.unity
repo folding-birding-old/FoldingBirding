@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 114abf9a87127064fb08b3ddd41e15ab, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -649,7 +649,15 @@ MonoBehaviour:
   resetHmdPoseOnRelease: 1
   resetHmdPoseByMiddleMouseButton: 1
   activateKeys: 3201000031010000
+  activateKeyBindings:
+  - <Keyboard>/leftCtrl
+  - <Keyboard>/rightCtrl
+  - <Keyboard>/f1
   pitchKeys: 3401000033010000
+  pitchKeyBindings:
+  - <Keyboard>/leftAlt
+  - <Keyboard>/rightAlt
+  - <Keyboard>/f2
 --- !u!114 &80248550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13813,7 +13821,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -22315,7 +22323,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 618294d7ceb59684d807c0686793e6b9, type: 2}
   m_sharedMaterial: {fileID: 3197890655304978764, guid: 618294d7ceb59684d807c0686793e6b9,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 3197890655304978764, guid: 618294d7ceb59684d807c0686793e6b9, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -22782,7 +22791,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 618294d7ceb59684d807c0686793e6b9, type: 2}
   m_sharedMaterial: {fileID: 3197890655304978764, guid: 618294d7ceb59684d807c0686793e6b9,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 3197890655304978764, guid: 618294d7ceb59684d807c0686793e6b9, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:

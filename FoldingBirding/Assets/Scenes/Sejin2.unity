@@ -2479,7 +2479,15 @@ MonoBehaviour:
   resetHmdPoseOnRelease: 1
   resetHmdPoseByMiddleMouseButton: 1
   activateKeys: 3201000031010000
+  activateKeyBindings:
+  - <Keyboard>/leftCtrl
+  - <Keyboard>/rightCtrl
+  - <Keyboard>/f1
   pitchKeys: 3401000033010000
+  pitchKeyBindings:
+  - <Keyboard>/leftAlt
+  - <Keyboard>/rightAlt
+  - <Keyboard>/f2
 --- !u!114 &208582434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5193,7 +5201,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 4712232ca8b67f64dafd21fd08d8112e, type: 2}
   m_sharedMaterial: {fileID: 6663156621454938172, guid: 4712232ca8b67f64dafd21fd08d8112e,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 6663156621454938172, guid: 4712232ca8b67f64dafd21fd08d8112e, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -7072,7 +7081,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 4712232ca8b67f64dafd21fd08d8112e, type: 2}
   m_sharedMaterial: {fileID: 6663156621454938172, guid: 4712232ca8b67f64dafd21fd08d8112e,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 6663156621454938172, guid: 4712232ca8b67f64dafd21fd08d8112e, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -9163,7 +9173,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 4712232ca8b67f64dafd21fd08d8112e, type: 2}
   m_sharedMaterial: {fileID: 6663156621454938172, guid: 4712232ca8b67f64dafd21fd08d8112e,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 6663156621454938172, guid: 4712232ca8b67f64dafd21fd08d8112e, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -14462,7 +14473,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -16580,7 +16592,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 4712232ca8b67f64dafd21fd08d8112e, type: 2}
   m_sharedMaterial: {fileID: 6663156621454938172, guid: 4712232ca8b67f64dafd21fd08d8112e,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 6663156621454938172, guid: 4712232ca8b67f64dafd21fd08d8112e, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -17727,7 +17740,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 618294d7ceb59684d807c0686793e6b9, type: 2}
   m_sharedMaterial: {fileID: 3197890655304978764, guid: 618294d7ceb59684d807c0686793e6b9,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 3197890655304978764, guid: 618294d7ceb59684d807c0686793e6b9, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -20650,7 +20664,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 618294d7ceb59684d807c0686793e6b9, type: 2}
   m_sharedMaterial: {fileID: 3197890655304978764, guid: 618294d7ceb59684d807c0686793e6b9,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 3197890655304978764, guid: 618294d7ceb59684d807c0686793e6b9, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -21813,7 +21828,8 @@ MonoBehaviour:
   m_fontAsset: {fileID: 11400000, guid: 618294d7ceb59684d807c0686793e6b9, type: 2}
   m_sharedMaterial: {fileID: 3197890655304978764, guid: 618294d7ceb59684d807c0686793e6b9,
     type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 3197890655304978764, guid: 618294d7ceb59684d807c0686793e6b9, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -26349,7 +26365,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   birdState: 0
   interactionState: 0
-  debugTxt: {fileID: 1295742054}
+  musicVFX: {fileID: 0}
+  heartVFX: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
