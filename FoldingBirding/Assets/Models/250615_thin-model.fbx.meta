@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: fly (1)
-      takeName: fly
+      name: land
+      takeName: land
       internalID: 4461826734956849724
       firstFrame: 0
-      lastFrame: 177
+      lastFrame: 56
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
