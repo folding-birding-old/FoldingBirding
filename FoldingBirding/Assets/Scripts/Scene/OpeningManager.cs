@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Drawing;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class OpeningManager : MonoBehaviour
 {
@@ -28,15 +27,6 @@ public class OpeningManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(SetCanvas());
-    }
-
-    private void Update()
-    {
-        //  ¾À ÀÌµ¿ (A ¹öÆ°)
-        if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.RTouch))
-        {
-            SceneManager.LoadScene(4);
-        }
     }
 
     private IEnumerator SetCanvas()

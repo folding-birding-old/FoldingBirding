@@ -36,21 +36,7 @@ public class ByeInteraction : MonoBehaviour
         isMovingBird = true;
         // 새가 따라오지 않도록 설정
         birdFollower?.SetExternalControl(true);
-        StateManager.instance.SetInteractionState(StateManager.InteractionState.Bye);
-
-        // 사용자를 바라보게 회전
-        //Vector3 lookTarget = hmdTransform.position;
-        //lookTarget.y = transform.position.y; // 회전축 흔들림 방지용 (수평만 보게)
-        //                                     // 새의 현재 위치에서 HMD 방향으로 가는 벡터
-        //Vector3 direction = (lookTarget - transform.position).normalized;
-
-        //// y축 기준으로 10도 회전된 방향을 만들기
-        //Quaternion yawRotation = Quaternion.AngleAxis(16f, Vector3.up); // 10도만큼 y축 회전
-        //Vector3 tiltedDirection = yawRotation * direction;
-
-        //// 최종적으로 해당 방향을 바라보게
-        //Quaternion targetRotation = Quaternion.LookRotation(tiltedDirection);
-        //transform.rotation = targetRotation;
+        //StateManager.instance.SetInteraction(InteractionState.Bye);
     }
 
     public void CloseBirdFlyAway()
@@ -58,6 +44,6 @@ public class ByeInteraction : MonoBehaviour
         isMovingBird = false;
         // 새가 따라오도록 설정
         birdFollower?.SetExternalControl(false);
-        StateManager.instance.SetInteractionState(StateManager.InteractionState.Follow);
+        //bird.GetComponent<BirdFollower>()?.SetFollowing(true);
     }
 }

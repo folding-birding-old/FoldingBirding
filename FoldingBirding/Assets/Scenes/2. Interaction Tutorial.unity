@@ -4064,7 +4064,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -13396,13 +13396,6 @@ MonoBehaviour:
   tutorialgCanvas: {fileID: 7334643119135018753}
   DescriptionTxt: {fileID: 2987340713841416119}
   isWaitingInteraction: 1
-  objectsToToggle:
-  - {fileID: 1040437514}
-  - {fileID: 875868546}
-  - {fileID: 1314736678}
-  - {fileID: 408915702}
-  - {fileID: 416927488}
-  - {fileID: 42250758}
 --- !u!4 &1169348105
 Transform:
   m_ObjectHideFlags: 0

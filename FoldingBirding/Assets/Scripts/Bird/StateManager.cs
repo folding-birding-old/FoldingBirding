@@ -37,7 +37,6 @@ public class StateManager : MonoBehaviour
     private Animator animator;
     private float hopTime = 0f;
 
-
     private void Awake()
     {
         if (instance == null) 
@@ -50,6 +49,10 @@ public class StateManager : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         SetInteractionState(InteractionState.Follow);
+
+        // For Confirm
+        PlayMusicVFX();
+        PlayHeartVFX();
     }
 
     void Update()
@@ -100,7 +103,6 @@ public class StateManager : MonoBehaviour
             case InteractionState.Pet:
                 interactionState = InteractionState.Pet;
                 SetBirdState(BirdState.Dance);
-                PlayHeartVFX();
                 break;
         }
     }
@@ -131,13 +133,21 @@ public class StateManager : MonoBehaviour
                 animator.SetBool("isFollow", true);
                 break;
             case BirdState.Land:
+                //birdState = BirdState.Land;
                 animator.SetTrigger("isLand");
                 birdState = BirdState.Sit;
                 break;
             case BirdState.TakeOff:
+                //birdState = BirdState.TakeOff;
                 animator.SetTrigger("isTakeOff");
                 break;
+            case BirdState.Hop:
+                //birdState = BirdState.Hop;
+                animator.SetTrigger("isHop");
+                birdState = BirdState.Sit;
+                break;
             case BirdState.Dance:
+                //birdState = BirdState.Dance;
                 animator.SetTrigger("isDance");
                 birdState = BirdState.Sit;
                 break;
@@ -154,7 +164,6 @@ public class StateManager : MonoBehaviour
                 if (Random.value < 0.4f)
                 {
                     Debug.Log("Bird Hops");
-                    PlayMusicVFX();
                     animator.SetTrigger("isHop");
                 }
             }

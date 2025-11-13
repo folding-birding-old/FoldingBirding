@@ -35,7 +35,7 @@ public class HandAboveHeadDetector : MonoBehaviour
             {
                 Debug.Log("[HandAboveHeadDetector] 손이 머리 위로 올라갔습니다!");
                 isMovingBird = true;
-                StateManager.instance.SetInteractionState(StateManager.InteractionState.Call);
+                //StateManager.instance.SetInteraction(InteractionState.Call);
 
             }
         }
@@ -56,7 +56,7 @@ public class HandAboveHeadDetector : MonoBehaviour
             if (distance < 0.05f)
             {
                 Debug.Log("새가 플레이어 앞에 도착함: Follow");
-                StateManager.instance.SetInteractionState(StateManager.InteractionState.Follow); // 2단계: 따라다니기 시작
+                //StateManager.instance.SetInteraction(InteractionState.Follow); // 2단계: 따라다니기 시작
                 isMovingBird = false;
             }
         }

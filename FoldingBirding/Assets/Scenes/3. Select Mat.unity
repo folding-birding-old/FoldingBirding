@@ -4080,8 +4080,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectMatCanvas: {fileID: 6015058685293892496}
-  confirmPanel: {fileID: 770162686}
-  texturePanel: {fileID: 6015058685293892498}
 --- !u!4 &327307678
 Transform:
   m_ObjectHideFlags: 0
@@ -9947,7 +9945,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -23975,12 +23973,6 @@ GameObject:
 --- !u!224 &6015058685293892497 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 539128674422989742, guid: f20161ebd41521b478d576294b4c1d93,
-    type: 3}
-  m_PrefabInstance: {fileID: 6015058685293892494}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6015058685293892498 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7682482925146403396, guid: f20161ebd41521b478d576294b4c1d93,
     type: 3}
   m_PrefabInstance: {fileID: 6015058685293892494}
   m_PrefabAsset: {fileID: 0}

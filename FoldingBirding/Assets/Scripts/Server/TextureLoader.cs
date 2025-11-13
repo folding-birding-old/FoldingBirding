@@ -30,22 +30,8 @@ public class TextureLoader : MonoBehaviour
         StartCoroutine(FetchTextureList()); 
     }
 
-    private void InitList()
-    {
-        foreach (Transform child in contents)
-        {
-            Destroy(child.gameObject);
-        }
-
-        contentAmout = 0;
-        nicknameAmout = 0;
-        curContentNum = 0;
-    }
-
     IEnumerator FetchTextureList()
     {
-        InitList(); 
-
         string url = $"{serverUrl}/textures";
         UnityWebRequest req = UnityWebRequest.Get(url);
         yield return req.SendWebRequest();

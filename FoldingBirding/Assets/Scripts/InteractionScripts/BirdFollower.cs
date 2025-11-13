@@ -47,24 +47,10 @@ public class BirdFollower : MonoBehaviour
             //                         hmdTransform.forward * followDistance +
             //                         Vector3.up * followHeightOffset;
 
-            Vector3 localOffset = new Vector3(0.1f, -0.1f, 0.7f);  // 오른쪽 + 위
+            Vector3 localOffset = new Vector3(0.5f, -0.3f, 0.7f);  // 오른쪽 + 위
             Vector3 targetPosition = hmdTransform.TransformPoint(localOffset);
 
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * followSpeed);
-
-            // 사용자를 바라보게 회전
-            //Vector3 lookTarget = hmdTransform.position;
-            //lookTarget.y = transform.position.y; // 회전축 흔들림 방지용 (수평만 보게)
-            //                                     // 새의 현재 위치에서 HMD 방향으로 가는 벡터
-            //Vector3 direction = (lookTarget - transform.position).normalized;
-
-            //// y축 기준으로 10도 회전된 방향을 만들기
-            //Quaternion yawRotation = Quaternion.AngleAxis(16f, Vector3.up); // 10도만큼 y축 회전
-            //Vector3 tiltedDirection = yawRotation * direction;
-
-            //// 최종적으로 해당 방향을 바라보게
-            //Quaternion targetRotation = Quaternion.LookRotation(tiltedDirection);
-            //transform.rotation = targetRotation;
         }
     }
 

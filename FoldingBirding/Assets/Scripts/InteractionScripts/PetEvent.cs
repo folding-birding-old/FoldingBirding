@@ -21,7 +21,6 @@ public class PetEvent : MonoBehaviour
         if (other.CompareTag("MyBird"))
         {
             Debug.Log($"{other.name} Pet My Bird");
-            StateManager.instance.SetInteractionState(StateManager.InteractionState.Pet);
         }
     }
 
